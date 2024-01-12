@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+     overflow-y: hidden; 
+     overflow-x: hidden; 
+}
+
+/* add style to the section  */
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* add style to the Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    /* border-bottom: 1px solid  hsl(223, 64%, 98%); */
+}
+
+.navs{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    color: hsl(220, 14%, 75%);
+    align-items: center;
+}
+
+.navs h3{
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+}
+
+.navbar ul{
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    font-weight: lighter;
+}
+
+/* add style to side bar */
+.sidebar{
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sidebar img{
+    height: 50%;
+    gap: 30px;
+    
+}
+
+.sidebar .cart1{
+    padding: 10px;
+    height: 30%;
+}
+
+/* styling the cartitem container */
+
+.container{
+    display: flex;
+    height: 85%;
+    width: 90%;
+    justify-content: space-between;
+    margin:auto;
+    border-top:1px solid hsl(223, 64%, 98%) ;
+    
+}
+
+/* style image side and thumbnails*/
+.imgSide{
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgSide .imgProduct{
+    height: 70%;
+    width: 80%;
+    /* border: 1px solid green; */
+    margin: auto;
+    border-radius: 10px;
+    /* background: url("./images/image-product-1.jpg"); */
+    /* background-repeat: no-repeat; */
+    
+}
+
+.imgSide .thumbnails{
+    height: 20%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(0, 0%, 100%) ; 
+}
+
+.thumbnails img{
+    height: 80%;
+    width: 22%;
+    border-radius: 10px;
+}
+
+/* add style to content side */
+.contentSide{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    height: 80%;
+    }
+.content h4{
+    color: hsl(26, 100%, 55%);
+}
+.content h2{
+    color:hsl(0, 0%, 0%) ;
+    font-weight: 700;
+    }
+.content p{
+    color:hsl(220, 14%, 75%) ;
+}
+
+
+.pricingBox{
+    height: 20%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "box1 box2" "box3 box3";   
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+    height: 40%;
+    width: 35%;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    background-color: hsl(25, 100%, 94%);
+}
+
+
+.box3{
+    grid-area: box3;
+}
+.box3 h4{
+    color: hsl(220, 14%, 75%);
+}
+
+/* add style to cart */
+.cart{
+    width: 90%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.cartBox{
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(26, 100%, 55%);
+}
+
+
+.cartAmount{
+    width: 35%;
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+}
+
+.cartAmount button{
+    border: none;
+    color: hsl(26, 100%, 55%);
+    background: none;
+}
+.zero h4{
+     color:hsl(0, 0%, 0%) ;  
+}
+.cartBox h5{
+    color:hsl(223, 64%, 98%) ;
+}
+.cartBox img{
+    color:hsl(223, 64%, 98%) ;
+}
